@@ -46,24 +46,19 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        val kotlinVersion: String by extra
-        val daggerhiltVersion: String by extra
-        val navigationVersion: String by extra
-        val realmVersion: String by extra
-
         classpath("com.android.tools.build:gradle:8.7.2")
         classpath("com.neenbedankt.gradle.plugins:android-apt:1.8")
         classpath("com.google.gms:google-services:4.4.2")
         classpath("com.google.firebase:firebase-crashlytics-gradle:3.0.2")
         classpath("io.realm:realm-gradle-plugin:10.19.0")
-        classpath("io.realm.kotlin:gradle-plugin:$realmVersion")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("io.realm.kotlin:gradle-plugin:1.9.1")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.20")
         classpath("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.19.0")
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion")
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
         classpath("com.google.firebase:perf-plugin:1.4.2")
-        classpath("com.google.dagger:hilt-android-gradle-plugin:$daggerhiltVersion")
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.51.1")
         classpath("org.jlleitschuh.gradle:ktlint-gradle:11.3.1")
-        classpath("org.jetbrains.kotlin:compose-compiler-gradle-plugin:$kotlinVersion")
+        classpath("org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.0.20")
     }
 }
 
