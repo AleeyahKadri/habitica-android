@@ -32,6 +32,7 @@ val daggerhilt_version: String by rootExtra
 val kotlin_version: String by rootExtra
 val mockk_version: String by rootExtra
 val kotest_version: String by rootExtra
+val appcompat_version: String by rootExtra
 
 android {
     compileSdk = target_sdk
@@ -203,8 +204,6 @@ dependencies {
 repositories {
     mavenCentral()
 }
-
-val appcompat_version: String by rootExtra
 
 android.testOptions {
     unitTests.all {

@@ -54,6 +54,8 @@ val min_sdk: Int by rootExtra
 val target_sdk: Int by rootExtra
 val app_version_code: Int by rootExtra
 val app_version_name: String by rootExtra
+val play_auth_version: String by rootExtra
+val play_wearables_version: String by rootExtra
 
 dependencies {
     implementation(fileTree(mapOf("include" to listOf("*.jar"), "dir" to "../common/libs")))
@@ -162,9 +164,6 @@ dependencies {
 
     implementation("com.gu.android:toolargetool:0.3.0")
 }
-
-val play_auth_version: String by rootExtra
-val play_wearables_version: String by rootExtra
 
 android {
     compileSdk = target_sdk
