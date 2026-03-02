@@ -194,7 +194,7 @@ android {
         testInstrumentationRunnerArguments["clearPackageData"] = "true"
 
         val formattedDate = java.text.SimpleDateFormat("yyMMdd").format(java.util.Date())
-        setProperty("archivesBaseName", "Habitica-$formattedDate$versionCode")
+        setProperty("archivesBaseName", "Habitica-$formattedDate${versionCode}")
     }
 
     buildFeatures {

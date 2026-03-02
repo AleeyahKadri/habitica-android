@@ -94,10 +94,10 @@ if (propFile.canRead()) {
         extra.set("app_version_name", props["NAME"])
         extra.set("app_version_code", props["CODE"].toString().toInt())
     } else {
-        println("signing.properties found but some entries are missing")
+        println("version.properties found but some entries are missing")
     }
 } else {
-    println("signing.properties not found")
+    println("version.properties not found")
 }
 
 configure<io.gitlab.arturbosch.detekt.extensions.DetektExtension> {

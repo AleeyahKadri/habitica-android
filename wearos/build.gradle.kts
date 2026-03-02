@@ -9,7 +9,6 @@ plugins {
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
 }
-apply(plugin = "kotlin-android")
 
 val rootExtra = rootProject.extra
 val target_sdk: Int by rootExtra
@@ -54,7 +53,7 @@ android {
         buildConfigField("String", "TESTING_LEVEL", "\"production\"")
 
         val formattedDate = java.text.SimpleDateFormat("yyMMdd").format(java.util.Date())
-        setProperty("archivesBaseName", "Habitica-WearOS-$formattedDate$versionCode")
+        setProperty("archivesBaseName", "Habitica-WearOS-$formattedDate${versionCode}")
     }
 
     signingConfigs {
