@@ -240,10 +240,10 @@ if (signingPropFile.canRead()) {
         android.signingConfigs.getByName("release").keyAlias = signingProps["KEY_ALIAS"].toString()
         android.signingConfigs.getByName("release").keyPassword = signingProps["KEY_PASSWORD"].toString()
     } else {
-        println("signing.properties found but some entries are missing")
+        println("signingrelease.properties found but some entries are missing")
         android.buildTypes.getByName("release").signingConfig = null
     }
 } else {
-    println("signing.properties not found")
+    println("signingrelease.properties not found")
     android.buildTypes.getByName("release").signingConfig = null
 }
